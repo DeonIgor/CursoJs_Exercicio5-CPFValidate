@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: rgb(15, 110, 140);
+    --secondary-color: rgb(10, 80, 100);
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.container {
+    width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.inputCPF {
+    height: 35px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #555;
+    padding-left: 10px;
+    margin: 0 20px 0 5px;
+}
+
+form button {
+    height: 35px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.response {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(41, 41, 41);
+}
+
+.valid {
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.invalid {
+    height: 50px;
+    background-color: rgb(236, 121, 121);
+}
